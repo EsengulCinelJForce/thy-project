@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import{ useState } from "react";
 
 import { flights } from "../MockData/flights.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
