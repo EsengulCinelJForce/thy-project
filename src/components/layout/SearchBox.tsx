@@ -8,15 +8,9 @@ import {
   faPeopleArrows,
   faPlaneArrival,
 } from "@fortawesome/free-solid-svg-icons";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FaPlaneArrival } from "react-icons/fa";
 import "./style.scss";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
-import ReactTooltip from "react-tooltip";
-// import "react-tooltip/dist/index.css";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import FlightListPage from "../../modules/FlightListPage";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -72,7 +66,7 @@ const SearchBox = () => {
       console.log("passengerCount", passengerCount);
     }
   };
-  const handleClose =() => {}
+  const handleClose = () => {};
   return (
     <div className="min-h-screen bg-primary flex  items-center p-20 flex-col text-center text-white">
       <div className="bg-selectBoxOpacity bg-opacity-60 py-5 px-5 pr-5">
@@ -156,7 +150,9 @@ const SearchBox = () => {
           >
             Kabin ve Yolcu Seçimi
             <div className="modal" style={{ width: "350px" }}>
-              <button  className="close" onClick={handleClose}>&times;</button>
+              <button className="close" onClick={handleClose}>
+                &times;
+              </button>
               <div className="content flex items-center">
                 <label>
                   <input type="radio" name="radioGroup" value="option1" />

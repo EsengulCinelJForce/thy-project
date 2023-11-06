@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Switch from "react-switch";
 import { useLocation } from "react-router-dom";
 import { flights } from "../MockData/flights.json";
-import DataTable, { ExpanderComponentProps } from "react-data-table-component";
 import { useNavigate } from "react-router-dom";
 
 const Passenger = () => {
@@ -20,7 +19,8 @@ const Passenger = () => {
     {
       flights.map((item) =>
         item.fareCategories.ECONOMY.subcategories.map((subcategory) => {
-          const amount = item.fareCategories.ECONOMY.subcategories[1].price.amount;
+          const amount =
+            item.fareCategories.ECONOMY.subcategories[1].price.amount;
           console.log("a", amount);
           if (subcategory.status === "AVAILABLE") {
             navigate(`/cabin-page/sucess?amount=${amount}`);

@@ -1,7 +1,3 @@
-import React from "react";
-// import Logo from "./Logo";
-// import { Footer } from "./Footer";
-
 export const Header = () => {
   return (
     <div className="bg-primary flex justify-between items-center h-20 p-4 ">
@@ -15,7 +11,7 @@ export const Header = () => {
         <div>
           <div className="relative text-white">
             <span>
-            search<span className="font-bold">Flight Challenge</span>
+              search<span className="font-bold">Flight Challenge</span>
             </span>
           </div>
         </div>
